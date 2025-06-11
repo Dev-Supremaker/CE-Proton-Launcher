@@ -23,4 +23,4 @@ Ensure these are available on your system.
 3. Make sure `protonhax` is installed and available in your system PATH.
 4. Make the script executable:
    ```bash
-   chmod +x CE-Proton-Launcher.sh
+   chmod +x CE-Proton-Launcher
