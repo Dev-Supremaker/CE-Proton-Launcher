@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# === Start of launcher script ===
+
+# Get the first running Proton game
+game=$(protonhax ls 2>/dev/null | head -n 1)
+
+if [ -z "$game" ]; then
+    echo "❌ No Proton game is currently running."
+    exit 1
+fi
+
+echo "✅ Detected Proton game: $game"
+
+# Search for exact "Cheat Engine.exe" (case-insensitive)
+SEARCH_DIR="${1:-$HOME}"
+cheatengine_exe=$(find "$SEARCH_DIR" -type f -iname "Cheat Engine.exe" -print -quit)
+
+if [ -z "$cheatengine_exe" ]; then
+    echo "❌ 'Cheat Engine.exe' not found in $SEARCH_DIR"
+    exit 1
+fi
+
+echo "✅ Found exact Cheat Engine.exe at: $cheatengine_exe"
+
+# Launch Cheat Engine using protonhax with exact Cheat Engine.exe
+protonhax run "$game" "$cheatengine_exe" &
