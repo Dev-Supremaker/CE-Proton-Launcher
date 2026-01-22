@@ -6,11 +6,9 @@ A Bash script to automatically detect a running Proton game, locate and launch *
 
 ## Dependencies
 
-- **A pre-installed copy of [Cheat Engine](https://cheatengine.org/)** on your system or a mounted directory  
-  The script requires the Windows executable `Cheat Engine.exe` to be present locally in order to launch it via Proton.
+- **[Cheat Engine](https://cheatengine.org/)**
 
-- [`protonhax`](https://github.com/jcnils/protonhax)  
-  Used to list running Proton games and launch `.exe` files via Proton.
+- **[`protonhax`](https://github.com/jcnils/protonhax)**
 
 Ensure these are available on your system.
 
