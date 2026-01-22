@@ -1,6 +1,6 @@
 # CE-Proton-Launcher
 
-A Bash script to automatically detect a running Proton game, locate and launch **Cheat Engine.exe** through `protonhax`, then monitor running Steam game processes to wait for their exit and clean up any leftover Cheat Engine or Proton processes.
+A wrapper that automatically detects running Proton games through `protonhax`, and launches Cheat Engine for detected games.
 
 ---
 
