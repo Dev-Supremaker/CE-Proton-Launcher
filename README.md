@@ -1,6 +1,6 @@
 # CE-Proton-Launcher
 
-A wrapper that automatically detects running Proton games through `protonhax`, and launches Cheat Engine for detected games.
+A wrapper that automatically detects Proton games through `protonhax`, and launches Cheat Engine for detected wine processes.
 
 ---
 
